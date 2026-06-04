@@ -1,0 +1,89 @@
+21. Find Max and Min in List: Input: [5, 2, 9, 1] → Output: Max: 9, Min: 1
+# Input list
+numbers = [5, 2, 9, 1]
+
+# Find maximum and minimum
+maximum = max(numbers)
+minimum = min(numbers)
+
+# Display result
+print("Max:", maximum)
+print("Min:", minimum)
+
+OUTPUT:
+
+Max: 9
+Min: 1
+
+
+22. Sum of Elements in List: Write a function to return the sum of a list.
+
+def sum_list(numbers):
+    return sum(numbers)
+
+# Example list
+numbers = [1, 2, 3, 4, 5]
+
+# Display result
+print("Sum:", sum_list(numbers))
+
+OUTPUT:
+Sum: 15
+
+23. Remove Duplicates from List: Input: [1,2,2,3] → Output: [1,2,3]
+# Input list
+numbers = [1, 2, 2, 3]
+
+# Remove duplicates
+unique_numbers = list(set(numbers))
+
+# Display result
+print("Output:", unique_numbers)
+
+OUTPUT:
+: [1, 2, 3]
+
+24. Search Element in List: Input a number and check if it exists in a list.
+
+# List of numbers
+numbers = [10, 20, 30, 40, 50]
+
+# Input number to search
+search = int(input("Enter a number to search: "))
+
+# Check if the number exists
+if search in numbers:
+    print("Element found in the list.")
+else:
+    print("Element not found in the list.")
+
+
+
+OUTPUT:
+
+Enter a number to search: 567
+Element not found in the list.
+
+
+25. Sort List Without sort() Function: Implement a simple bubble sort manually.
+numbers = [5, 3, 8, 1, 2]
+
+n = len(numbers)
+
+for i in range(n):
+    for j in range(0, n - i - 1):
+        if numbers[j] > numbers[j + 1]:
+            temp = numbers[j]
+            numbers[j] = numbers[j + 1]
+            numbers[j + 1] = temp
+
+print("Sorted List:", numbers)
+
+OUTPUT:
+Sorted List: [1, 2, 3, 5, 8]
+
+
+
+
+
+
